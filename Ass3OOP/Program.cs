@@ -85,7 +85,22 @@
 
     #endregion
 
-  
+    #region Q4
+    //class Employee
+    //{
+    //    public void Display()
+    //    {
+    //        Console.WriteLine("Employee is  working");
+    //    }
+    //}
+    //class Manager : Employee
+    //{
+    //    public new void Display()
+    //    {
+    //        Console.WriteLine("Manager is  working");
+    //    }
+    //}
+    #endregion
 
   
     class Program
@@ -119,7 +134,12 @@
             //Console.WriteLine($"the sum = {Sum} , the sub = {Sub}");
             #endregion
 
-         
+            #region CallQ4
+            //Employee employee = new Employee();
+            //Manager manager = new Manager();
+            //employee.Display(); 
+            //manager.Display();  
+            #endregion
 
         }
     }
