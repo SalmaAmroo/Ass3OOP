@@ -1,6 +1,6 @@
 ﻿namespace Ass3OOP
 {
-
+    #region Part1
     #region Q1
     //class Calculator 
     //{
@@ -127,10 +127,161 @@
 
     #endregion
 
+    #endregion
+
+    #region Partt2
+    #region Qestion
+    // --1--
+    //class Duration
+    //{
+    //    public int Hours { set; get; }
+    //    public int Minutes { set; get; }
+    //    public int Seconds { set; get; }
+
+    //    public int ToTotalSeconds()
+    //    {
+    //        return Hours * 3600 + Minutes * 60 + Seconds;
+    //    }
+
+    //    //--2--
+
+    //    public override bool Equals(object? obj)
+    //    {
+    //        if (obj is Duration other)
+    //        {
+    //            return this.Hours == other.Hours &&
+    //                   this.Minutes == other.Minutes &&
+    //                   this.Seconds == other.Seconds;
+    //        }
+    //        return false;
+    //    }
+
+
+    //    public override int GetHashCode()
+    //    {
+    //        return HashCode.Combine(Hours, Minutes, Seconds);
+    //    }
+
+    //    public override string ToString()
+    //    {
+    //        string Result = "";
+    //        if (Hours > 0)
+    //            Result += $"Hours: {Hours}";
+    //        if (Hours > 0 || Minutes > 0)
+    //            Result += $" Minutes : {Minutes}";
+    //        Result += $" Seconds: {Seconds}";
+
+    //        return Result;
+
+    //    }
+
+    //    //--3--
+    //    public Duration(int Hours, int Minutes, int Seconds)
+    //    {
+    //        this.Hours = Hours;
+    //        this.Minutes = Minutes;
+    //        this.Seconds = Seconds;
+    //    }
+    //    public Duration(int TotalSeconds)
+    //    {
+    //        Hours = TotalSeconds / 3600;
+    //        int Rem = TotalSeconds % 3600;
+
+    //        Minutes = Rem / 60;
+    //        Seconds = Rem % 60;
+    //    }
+    //    //operator Overloading 
+    //    //--1-- D3 = D1+D2
+    //    public static Duration operator +(Duration D1, Duration D2)
+    //    {
+    //        return new Duration(D1.ToTotalSeconds() + D2.ToTotalSeconds());
+    //    }
+    //    //--2-- D3=D1 + 7800
+    //    public static Duration operator +(Duration D1, int Sec)
+    //    {
+    //        return new Duration(D1.ToTotalSeconds() + Sec);
+    //    }
+    //    //--3-- D3=666+D3
+    //    public static Duration operator +(int Sec, Duration D3)
+    //    {
+    //        return new Duration(D3.ToTotalSeconds() + Sec);
+    //    }
+    //    //--4-- D3= ++D1 (Increase One Minute)
+    //    public static Duration operator ++(Duration D1)
+    //    {
+    //        return new Duration(D1.ToTotalSeconds() + 60);
+    //    }
+
+    //    //--5-- D3 = --D2 (Decrease One Minute)
+    //    public static Duration operator --(Duration D1)
+    //    {
+    //        int total = D1.ToTotalSeconds() - 60;
+    //        if (total < 0) total = 0;
+    //        return new Duration(total);
+    //    }
+
+    //    //--6-- D1= D1 -D2
+    //    public static Duration operator -(Duration D1, Duration D2)
+    //    {
+    //        int result = D1.ToTotalSeconds() - D2.ToTotalSeconds();
+    //        if (result < 0) result = 0;
+    //        return new Duration(result);
+    //    }
+
+    //    //--7-- If (D1>D2)
+    //    public static bool operator >(Duration D1, Duration D2)
+    //    {
+    //        return D1.ToTotalSeconds() > D2.ToTotalSeconds();
+    //    }
+    //    public static bool operator <(Duration D1, Duration D2)
+    //    {
+    //        return D1.ToTotalSeconds() < D2.ToTotalSeconds();
+    //    }
+    //    //--8-- If (D1<=D2)
+    //    public static bool operator >=(Duration D1, Duration D2)
+    //    {
+    //        return D1.ToTotalSeconds() >= D2.ToTotalSeconds();
+    //    }
+    //    public static bool operator <=(Duration D1, Duration D2)
+    //    {
+    //        return D1.ToTotalSeconds() <= D2.ToTotalSeconds();
+    //    }
+
+    //    //--9-- If (D1)
+    //    public static bool operator true(Duration d)
+    //    {
+    //        return d.ToTotalSeconds() > 0;
+    //    }
+
+    //    public static bool operator false(Duration d)
+    //    {
+    //        return d.ToTotalSeconds() <= 0;
+    //    }
+
+    //    //--10-- DateTime Obj = (DateTime) D1
+    //    public static explicit operator DateTime(Duration d)
+    //    {
+    //        return new DateTime(1, 1, 1, d.Hours, d.Minutes, d.Seconds);
+    //    }
+
+
+    //}
+
+
+
+
+    #endregion
+
+
+
+
+    #endregion
     class Program
     {
         static void Main(string[] args)
         {
+
+            #region CallPart1
             #region CallQ1
             //Calculator calculator = new Calculator();
             //Console.WriteLine(calculator.Add(1, 2));
@@ -175,6 +326,62 @@
             //baseClass1.Display();
             //baseClass2.Display();
             //baseClass3.Display(); 
+
+
+            #endregion
+
+            #endregion
+
+            #region CallPart2
+            ////--1--
+            //Duration D1 = new Duration(1,10,15);
+            //Console.WriteLine(D1);
+            //Duration D2 = new Duration(3600);
+            //Console.WriteLine(D2);
+            //Duration D3 = new Duration(7800);
+            //Console.WriteLine(D3);
+            //Duration D4 = new Duration(666);
+            //Console.WriteLine(D4);
+
+            //Duration D5 = new Duration(1,10,15);
+            //Console.WriteLine(D1.Equals(D5));
+            //Console.WriteLine(D1.GetHashCode());
+            //Console.WriteLine(D5.GetHashCode());
+
+            //------------------------------------------------------------------------------------//
+
+            //Duration D1 = new Duration(1, 10, 15);
+            //Duration D2 = new Duration(7800);
+
+            //Duration D3 = D1 + D2;
+            //Console.WriteLine("D3 = D1 + D2 → " + D3);
+
+            //D3 = D1 + 7800;
+            //Console.WriteLine("D3 = D1 + 7800 → " + D3);
+
+            //D3 = 666 + D3;
+            //Console.WriteLine("D3 = 666 + D3 → " + D3);
+
+            //D3 = ++D1;
+            //Console.WriteLine("D3 = ++D1 → " + D3);
+
+            //D3 = --D2;
+            //Console.WriteLine("D3 = --D2 → " + D3);
+
+            //D1 = D1 - D2;
+            //Console.WriteLine("D1 = D1 - D2 → " + D1);
+
+            //if (D1 > D2)
+            //    Console.WriteLine("D1 > D2");
+
+            //if (D1 <= D2)
+            //    Console.WriteLine("D1 <= D2");
+
+            //if (D1)
+            //    Console.WriteLine("D1 has non-zero duration");
+
+            //DateTime dt = (DateTime)D1;
+            //Console.WriteLine("DateTime = " + dt.ToLongTimeString());
 
 
             #endregion
