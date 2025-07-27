@@ -102,7 +102,31 @@
     //}
     #endregion
 
-  
+    #region Q5
+    //class BaseClass
+    //{
+    //    public virtual void Display()
+    //    {
+    //        Console.WriteLine("Message from BaseClass");
+    //    }
+    //}
+    //class DerivedClass1: BaseClass
+    //{
+    //    public override void Display()
+    //    {
+    //        Console.WriteLine("Message from DerivedClass1");
+    //    }
+    //}
+    //class DerivedClass2 : DerivedClass1
+    //{
+    //    public new void Display()
+    //    {
+    //        Console.WriteLine("Message from DerivedClass2"); // give the last once we make overirde so will return "Message from DerivedClass1"
+    //    }
+    //}
+
+    #endregion
+
     class Program
     {
         static void Main(string[] args)
@@ -139,6 +163,20 @@
             //Manager manager = new Manager();
             //employee.Display(); 
             //manager.Display();  
+            #endregion
+
+            #region CallQ5
+            //BaseClass baseClass = new BaseClass();
+            //BaseClass baseClass1 = new DerivedClass1();
+            //BaseClass baseClass2 = new DerivedClass2();
+            //DerivedClass2 baseClass3 = new DerivedClass2();
+
+            //baseClass.Display();
+            //baseClass1.Display();
+            //baseClass2.Display();
+            //baseClass3.Display(); 
+
+
             #endregion
 
         }
