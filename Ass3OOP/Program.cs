@@ -46,6 +46,48 @@
 
     //}
     #endregion
+
+    #region Q3
+    //class ComplexNumber
+    //{
+    //    public double Real { get; set; }
+    //    public double Imagine { get; set; }
+
+    //    public ComplexNumber (double Real, double Imagine)
+    //    {
+    //        this.Real = Real;
+    //        this.Imagine =Imagine;
+    //    }
+
+    //    override public string ToString()
+    //    {
+    //        return $"{Real} + {Imagine}i";
+    //    }
+
+    //    public static ComplexNumber operator +(ComplexNumber c1, ComplexNumber c2)
+    //    {
+    //        return new ComplexNumber
+    //            (
+    //              c1.Real + c2.Real,
+    //                c1.Imagine + c2.Imagine
+    //            );
+    //    }
+
+    //    public static ComplexNumber operator -(ComplexNumber c1, ComplexNumber c2)
+    //    {
+    //        return new ComplexNumber
+    //            (
+    //              c1.Real - c2.Real,
+    //                c1.Imagine - c2.Imagine
+    //            );
+    //    }
+    //}
+
+    #endregion
+
+  
+
+  
     class Program
     {
         static void Main(string[] args)
@@ -68,6 +110,16 @@
 
 
             #endregion
+
+            #region CallQ3
+            //ComplexNumber c1 = new ComplexNumber(2, 3);
+            //ComplexNumber c2 = new ComplexNumber(4, 5);
+            //ComplexNumber Sum = c1 + c2;
+            //ComplexNumber Sub = c1 - c2;
+            //Console.WriteLine($"the sum = {Sum} , the sub = {Sub}");
+            #endregion
+
+         
 
         }
     }
